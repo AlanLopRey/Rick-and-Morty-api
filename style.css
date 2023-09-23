@@ -1,0 +1,166 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  background: rgb(36, 23, 83);
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  margin-bottom: 2rem;
+}
+.header__h1 {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 0 15px #ffff00;
+  color: #00ffff;
+  animation: title 1.2s infinite ease-in-out;
+}
+
+@keyframes title {
+  50% {
+    text-shadow: 0 0 15px #00ffff;
+    color: #ffff00;
+  }
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.finder-character {
+  width: 80vw;
+  max-width: 30rem;
+  height: 2rem;
+  border-radius: 20px;
+  background-color: #1c272e;
+  color: white;
+  padding: 1rem;
+}
+
+.container-cards {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem;
+  margin-bottom: 10rem;
+}
+
+.card-character {
+  width: 14rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  /* background-color: hwb(253 2% 75% / 0.257); */
+  background: rgba(255, 255, 255, 0.102);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.sect__img {
+  height: 60%;
+  object-fit: cover;
+}
+
+.description-card {
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  color: #bfc1c2;
+  width: 100%;
+  height: 30%;
+}
+
+.description__h2 {
+  font-size: 1rem;
+  text-shadow: 0 0 15px #ffff00;
+  color: #00ffff;
+}
+
+.description__p {
+  margin-top: 1rem;
+}
+
+.footer {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+small {
+  color: white;
+}
